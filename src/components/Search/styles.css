@@ -1,0 +1,33 @@
+.container__search {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+
+  color: var(--input-text);
+}
+.search__paper {
+  background-color: var(--input-bg);
+  border-radius: 4px;
+  padding: 0 0.8rem;
+}
+.search-box {
+  width: 240px;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  background: transparent;
+  color: var(--input-text);
+}
+.search__form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.search__button {
+  display: block;
+  text-align: center;
+}
+.search__button__icon {
+  font-size: 1.5rem;
+  color: #747474;
+}

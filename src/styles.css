@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --color-gray: #747474;
+  --input-text: #747474;
+  --text: #fff;
+  --input-bg: #fff;
+  --bg: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  --color-hover: #ddd;
+
+  --color-gray-light: #747474;
+  --input-text-light: #747474;
+  --text-light: #fff;
+  --input-bg-light: #fff;
+  --bg-light: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  --color-hover-light: #ddd;
+
+  --color-gray-dark: #a0a0a0;
+  --color-hover-dark: #808080;
+  --input-text-dark: #fff;
+  --text-dark: #fff;
+  --input-bg-dark: #474747;
+  --bg-dark: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray: var(--color-gray-dark);
+    --color-hover: var(--color-hover-dark);
+    --input-text: var(--input-text-dark);
+    --text: var(--text-dark);
+    --input-bg: var(--input-bg-dark);
+    --bg: var(--bg-dark);
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-gray: var(--color-gray-light);
+    --color-hover: var(--color-hover-light);
+    --input-text: var(--input-text-light);
+    --text: var(--text-light);
+    --input-bg: var(--input-bg-light);
+    --bg: var(var(--bg-light));
+  }
+}
+:root[color-scheme="light"] {
+  --color-gray: var(--color-gray-light);
+  --color-hover: var(--color-hover-light);
+  --input-text: var(--input-text-light);
+  --text: var(--text-light);
+  --input-bg: var(--input-bg-light);
+  --bg: var(var(--bg-light));
+}
+:root[color-scheme="dark"] {
+  --color-gray: var(--color-gray-dark);
+  --color-hover: var(--color-hover-dark);
+  --input-text: var(--input-text-dark);
+  --text: var(--text-dark);
+  --input-bg: var(--input-bg-dark);
+  --bg: var(--bg-dark);
+}
+html {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+body {
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+input {
+  border: 0;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+}
+.pipeline {
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--text);
+}
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}

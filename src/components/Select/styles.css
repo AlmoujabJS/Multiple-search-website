@@ -1,0 +1,93 @@
+.AMJ-Select {
+  position: relative;
+  width: 200px;
+  background: var(--input-bg);
+}
+.AMJ-Select > * {
+  user-select: none;
+}
+.AMJ-Select > div.selected-options {
+  width: 100%;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  padding: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: visible;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  gap: 0.2rem;
+  color: var(--color-gray);
+}
+.AMJ-Select div.selected-options::after {
+  content: "";
+  display: block;
+  border: 5px solid transparent;
+  border-top-color: #2e8eff;
+  position: absolute;
+  right: -0.3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.AMJ-Select div.selected-options .selected-option {
+  background: #0967ed;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin-right: 4px;
+  color: #fff;
+}
+
+.select-list {
+  background: inherit;
+  position: absolute;
+  min-width: 150px;
+  top: 150%;
+}
+
+.AMJ-Select ul {
+  list-style: none;
+  position: relative;
+  background: inherit;
+  width: 100%;
+  padding: 0.2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.AMJ-Select ul::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.5px;
+  left: 15%;
+  transform: translateY(-100%);
+  border: 10px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: #ddd;
+}
+.AMJ-Select ul::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 15%;
+  transform: translateY(-100%) translateX(1px);
+  border: 9px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: var(--input-bg);
+}
+.AMJ-Select ul li {
+  padding: 0.3rem 0.8rem;
+}
+.AMJ-Select ul li:hover {
+  background-color: var(--color-hover);
+  cursor: pointer;
+  width: 100%;
+}

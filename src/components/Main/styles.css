@@ -1,0 +1,16 @@
+main {
+  text-align: center;
+  color: white;
+}
+h1,
+h4 {
+  font-weight: 300;
+}
+h1 {
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+}
+h4 {
+  margin-bottom: 3rem;
+}

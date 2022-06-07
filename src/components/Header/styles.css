@@ -1,0 +1,11 @@
+header {
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.theme-icon {
+  color: white;
+  font-size: 1.35rem;
+}
